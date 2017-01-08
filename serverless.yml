@@ -1,0 +1,25 @@
+service: serverless-rollbar-example
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  cfLogs: true
+  environment:
+    rollbarServerAccessToken: ${env:ROLLBAR_SERVER_ACCESS_TOKEN}
+
+package:
+  include:
+    - handler.js
+    - node_modules/**
+  exclude:
+    - serverless.yml
+    - .gitignore
+    - .npmignore
+    - package.json
+    - README.md
+
+functions:
+  happyEndpoint:
+    handler: handler.happyEndpoint
+  unhappyEndpoint:
+    handler: handler.unhappyEndpoint

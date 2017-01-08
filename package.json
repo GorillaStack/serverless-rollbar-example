@@ -1,0 +1,23 @@
+{
+  "name": "serverless-rollbar-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GorillaStack/serverless-rollbar-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GorillaStack/serverless-rollbar-example/issues"
+  },
+  "homepage": "https://github.com/GorillaStack/serverless-rollbar-example#readme",
+  "dependencies": {
+    "winston": "^2.3.0",
+    "winston-transport-rollbar": "^0.6.2"
+  }
+}
